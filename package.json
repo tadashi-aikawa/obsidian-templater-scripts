@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "obsidian-tempura": "github:tadashi-aikawa/obsidian-tempura"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "typescript": "5.2"
+  },
+  "scripts": {
+    "dev": "tempura --watch"
+  },
+  "type": "module"
+}
