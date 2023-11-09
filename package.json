@@ -7,7 +7,7 @@
     "typescript": "5.2"
   },
   "scripts": {
-    "dev": "tempura --watch"
+    "dev": "tempura"
   },
   "type": "module"
 }
