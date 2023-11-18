@@ -2,12 +2,12 @@
 const T = tp.user.fryTempura();
 const title = await T.showInputDialog("Articleのタイトルを入力してください");
 if (!title) {
-  throw new Error("タイトルは必須です");
+  throw T.exit("タイトルは必須です");
 }
 
 const fp = `📘Articles/📘${title}.md`;
 if (await T.fileExists(fp)) {
-  throw new Error(`⚠️Error: ${fp} is already existed.`);
+  throw T.exit(`⚠️Error: ${fp} is already existed.`);
 }
 
 const today = T.now("YYYY-MM-DD");
