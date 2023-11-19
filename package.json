@@ -3,7 +3,11 @@
     "obsidian-tempura": "github:tadashi-aikawa/obsidian-tempura"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/plugin-transform-typescript": "^7.23.3",
     "@tsconfig/node18": "^18.2.2",
+    "chokidar": "^3.5.3",
+    "obsidian": "^1.4.11",
     "typescript": "5.2"
   },
   "scripts": {
