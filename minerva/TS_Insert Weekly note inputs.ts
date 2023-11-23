@@ -20,7 +20,7 @@ if (!weekEnd) {
 const isCreated = (file: TFile, start: Moment, end: Moment) =>
   file.stat &&
   file.stat.ctime >= start.valueOf() &&
-  file.stat.ctime <= end.valueOf();
+  file.stat.ctime <= end.endOf("day").valueOf();
 const isPublicNote = (file: TFile) =>
   !file.path.startsWith("_") && file.extension === "md";
 
