@@ -51,6 +51,10 @@ const maxNumber = Number(
 const newNumber = `000${maxNumber + 1}`.slice(-4);
 
 const inputTitle = await T.showInputDialog(`[${newNumber}] Enter title`);
+if (!inputTitle) {
+  throw T.exit();
+}
+
 const title = `${target.basename}-${newNumber} ${inputTitle}`;
 const filePath = `💿ADR/${title}.md`;
 if (await T.fileExists(filePath)) {
