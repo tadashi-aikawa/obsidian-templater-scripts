@@ -35,6 +35,7 @@ T.insert(
         ) && isPublicNote(x)
     )
     .map((x) => `- [[${x.basename}]]`)
+    .sort()
     .join("\n")
 );
 
