@@ -1,9 +1,4 @@
 ///<%*
-const sortBy = (key: string) => {
-  return (a: object, b: object) =>
-    a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
-};
-
 const NOTE_BODY = `
 ## ステータス
 
@@ -48,7 +43,7 @@ if (!target) {
 const maxNumber = Number(
   T.getAllMarkdownFiles()
     .filter((x) => x.name.startsWith(`${target.basename}-`))
-    .sort(sortBy("name"))
+    .sort(T.sorter((x) => x.name))
     .pop()
     ?.name.split(" ")[0]
     .replace(`${target.basename}-`, "") ?? -1
