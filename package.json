@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "obsidian-tempura": "github:tadashi-aikawa/obsidian-tempura"
-  },
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/plugin-transform-typescript": "^7.23.5",
@@ -13,5 +10,8 @@
   "scripts": {
     "dev": "tempura"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "obsidian-tempura": "file:../obsidian-tempura"
+  }
 }
